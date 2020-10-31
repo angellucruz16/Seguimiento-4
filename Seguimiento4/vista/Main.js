@@ -20,7 +20,7 @@ draw () {
 } //DRAW
 
 mousePressed (){
-    
+
     controlador.mousePressed();
 
 
@@ -28,6 +28,7 @@ mousePressed (){
 
 keypressed () {
     controlador.keypressed ();
+    
 } //KEYPRESSED
 
 } //MAIN

@@ -34,3 +34,7 @@ class Figura{
     
 
 } //FIGURA
+
+module.exports = {
+    FiguraClass: Figura
+ }
