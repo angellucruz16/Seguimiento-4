@@ -1,8 +1,10 @@
+
+
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 
 
-output.innerHTML = slider.value; 
+output.innerHTML = slider.value; //VALOR DE LA BARRITA
 
 slider.oninput = function() {  
 
