@@ -10,6 +10,7 @@ constructor (tamArregloCuadrados, tam){
 set tamArregloCuadrados (tamArregloCuadrados) {
 
     this.tamArregloCuadrados = tamArregloCuadrados;
+    tamArregloCuadrados = this.value;
 
 } //TAM ARREGLO CUADRADOS
 
