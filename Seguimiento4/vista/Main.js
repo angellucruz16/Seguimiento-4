@@ -1,34 +1,30 @@
-class Main {
+new p5();
 
-constructor (estadoPantalla) {
-let controlador; //Esta variable me permite pasar por controles y manejar los metodos de aquí
+function setup () {
 
-} //CONSTRUCTOR
-
-setup () {
-
-    createCanvas (1024,768);
-    controlador = new controlador (this); //Inicializo mi variable
+    createCanvas(800, 800);
+  stroke(255); // Set line drawing color to white
+  frameRate(30);
+   // controlador = new controlador (this); //Inicializo mi variable
 
 } //SETUP
 
-draw () {
+function draw () {
 
-    background (0);
-    controlador.draw();
+    rect(100,100,100,100);
+    background (255);
+  //  controlador.draw();
 
 } //DRAW
 
-mousePressed (){
+function mousePressed (){
 
-    controlador.mousePressed();
+   // controlador.mousePressed();
 
 
 } //MOUSEPRESSED
 
-keypressed () {
-    controlador.keypressed ();
+function keypressed () {
+   // controlador.keypressed ();
     
 } //KEYPRESSED
-
-} //MAIN

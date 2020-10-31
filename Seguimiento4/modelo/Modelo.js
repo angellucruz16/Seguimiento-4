@@ -1,9 +1,10 @@
 class Modelo {
 
-constructor (tamArregloCuadrados, app){
+constructor (tamArregloCuadrados){
 
-    this.app = app;
+    //this.app = app;
     this.cuadrados = [tamArregloCuadrados];  
+    llenarCuadrados();
     this.circulos = [tamArregloCuadrados];
 
     this.posXs = [10];
@@ -21,11 +22,20 @@ constructor (tamArregloCuadrados, app){
 
 } //CONSTRUCTOR
 
-
+llenarCuadrados(){
+    for (let index = 0; index < this.cuadrados.length; index++) {
+        let cuadrado = new Cuadrado (posXs[index]+70,this.posYCuadrados,this.widthHeightCuadrados,this.widthHeightCuadrados);
+        cuadrado.numRandom=rand(1,10);
+        this.cuadrados[index]=cuadrado;
+    }
+}
 
 agregarFigura () {
     let cuadradoFinal = this.cuadrados[this.cuadrados.length -1].posX; 
     let cuadrado = new Cuadrado (cuadradoFinal+70,this.posYCuadrados,this.widthHeightCuadrados,this.widthHeightCuadrados);
+    
+    cuadrado.numRandom= rand (1,10);
+
     this.cuadrados.push(cuadrado);
 
     } //AGREGAR FIGURA
@@ -57,6 +67,13 @@ ordenarFiguras () {
 
 agregarCirculos() {
 
+this.circulos = this.cuadrados.map (cuadrado => {
+    let circulo = new Bolita (posX, this.posYCirculos, this.widthHeightCirculos, this.widthHeightCirculos)
+
+    circulo.numRandom = cuadrado.numRandom;
+    return circulo;
+
+});
 
 } //AGREGARCIRCULOS
 

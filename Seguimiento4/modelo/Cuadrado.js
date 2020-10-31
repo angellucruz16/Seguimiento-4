@@ -1,4 +1,3 @@
-
 class Cuadrado extends Figura {
 constructor(posX, posY, height, width ) {  
     
@@ -27,9 +26,3 @@ moverFigura () {
  
 } //CLASS
 
-let c = new Cuadrado(100,100,1000,100);
-console.log(c.width);
-function render()
-{
-    c.renderFigura();
-}

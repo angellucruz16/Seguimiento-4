@@ -37,10 +37,8 @@ class Figura{
         return this.posX;
     }
 
-    
+    get numRandom () {
+        return this.numRandom;
+    }
 
 } //FIGURA
-
-module.exports = {
-    FiguraClass: Figura
- }

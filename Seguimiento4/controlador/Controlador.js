@@ -4,7 +4,7 @@
 
 //} //CONSTRUCTOR
 //}
-
+let modelo;
 let slider = document.getElementById("myRange");
 let output = document.getElementById("demo");
 
@@ -20,7 +20,9 @@ slider.oninput = function() {
 
 function botonContinuar (){
 
+    modelo= new Modelo(slider.value);
     window.location.href="animation.html"; 
+    
 
 } //FUNCION BOTON CONTINUAR
 
