@@ -21,13 +21,26 @@ agregarFigura () {
 eliminarFigura (){
 
 
-    } //ELIMINAR FIGURAº
+    } //ELIMINAR FIGURA
 
 duplicarTam () {
 
 
-    } //DUPLICARTAM
+    } //DUPLICAR TAM
 
-ordenarFiguras    
+ordenarFiguras () {
+
+
+    } //ORDENAR FIGURAS
+
+tamInicialAumentar () {
+
+
+    } //TAM INICIAL AUMENTAR  
+
+tamInicialDisminuir () {
+
+
+    } //TAM INICIAL DISMINUIR   
  
 } // CLASS MODELO
