@@ -1,7 +1,13 @@
 class Modelo {
 
-constructor (tamArregloCuadrados, tam){
+constructor (tamArregloCuadrados, app){
 
+    this.app = app;
+    this.cuadrados = [tamArregloCuadrados];  
+    this.circulos = [tamArregloCuadrados];
+
+    this.posXs = [10];
+    
 
 
 } //CONSTRUCTOR

@@ -9,6 +9,8 @@ class Figura{
         this.posX = posX;
         this.posY = posY;
 
+        this.velocidad = 2;
+
     } // CONSTRUCTOR
 
     set numRandom (numRandom) {
