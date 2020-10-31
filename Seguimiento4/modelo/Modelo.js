@@ -7,21 +7,21 @@ constructor (tamArregloCuadrados, app){
     this.circulos = [tamArregloCuadrados];
 
     this.posXs = [10];
-    
+
+    for (let i = 0; i < this.posXs.length ; i++) {
+
+        this.posXs [i] = 150 + 70*i;
+
+    } //FOR
 
 
 } //CONSTRUCTOR
 
 
-set tamArregloCuadrados (tamArregloCuadrados) {
-
-    this.tamArregloCuadrados = tamArregloCuadrados;
-    tamArregloCuadrados = this.value;
-
-} //TAM ARREGLO CUADRADOS
 
 agregarFigura () {
-
+    let cuadradoFinal = this.cuadrados[this.cuadrados.length -1].posX(); 
+    let cuadrado = new Cuadrado (
 
     } //AGREGAR FIGURA
 

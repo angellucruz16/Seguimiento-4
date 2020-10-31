@@ -33,6 +33,10 @@ class Figura{
 
     } //RENDER FIGURA
 
+    get posX(){
+        return this.posX;
+    }
+
     
 
 } //FIGURA
